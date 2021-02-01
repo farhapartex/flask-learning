@@ -8,12 +8,12 @@ def index():
     return "<h1>Hello World!</h1>"
 
 
-@app.route("/home")
+@app.route("/path")
 def home():
     return "<h1>You are in home page</h1>"
 
 
-@app.route("/home/<place>")
+@app.route("/path/<place>")
 def home_in_place(place):
     return "<h1>You are in " + place + " now"
 

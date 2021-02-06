@@ -10,11 +10,11 @@ app = Flask(__name__, template_folder='template')
 """
 TEMPLATE_NAME = "test.html"
 
-@app.route("/home")
+@app.route("/")
 def home():
     context = {}
     context["title"] = "Template Page"
-    return render_template("test.html", context=context)
+    return render_template(TEMPLATE_NAME, context=context)
 
 
 if __name__ == "__main__":
